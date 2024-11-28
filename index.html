@@ -540,7 +540,7 @@ function update() {
         starfield.tilePosition.y += 2;;
         thruster.on=true;
         //game.debug.text("y position: " + starfield.tilePosition.y, 32, 32);
-        game.debug.text( "This is debug text", 100, 380 );
+        //game.debug.text( "This is debug text", 100, 380 );
         //starfield.angle += .2;
         //game.physics.arcade.velocityFromAngle(player.angle, 100, player.body.velocity);
                 //player.y-=2;
@@ -619,15 +619,15 @@ function render() {
     //game.debug.spriteInfo(player, 32, 32);
     /*for (var i = 0; i < bullets.length; i++)
    {
-       game.debug.body(bullets.children[i]);
+       //game.debug.body(bullets.children[i]);
    }
-   game.debug.body(player);   
+   //game.debug.body(player);   
     
-    game.debug.text('Living baddies: ' + (Enemies.countLiving()), 30, 420);
-    game.debug.text('Dead baddies: ' + (Enemies.countDead()), 30, 440);
+   // game.debug.text('Living baddies: ' + (Enemies.countLiving()), 30, 420);
+  //  game.debug.text('Dead baddies: ' + (Enemies.countDead()), 30, 440);
     */
-	game.debug.text("Tile Position: " + starfield.tilePosition.y, 30, 66);
-	game.debug.text("Ship Position: " + player.x, 30, 86);
+	//game.debug.text("Tile Position: " + starfield.tilePosition.y, 30, 66);
+	//game.debug.text("Ship Position: " + player.x, 30, 86);
 }
 
 function shipCollide(bullet, enemy) {
