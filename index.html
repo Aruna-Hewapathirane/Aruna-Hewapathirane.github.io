@@ -199,7 +199,7 @@ function create() {
   Enemies = game.add.group();
   Enemies.enableBody = true;
   Enemies.physicsBodyType = Phaser.Physics.ARCADE;
-  Enemies.createMultiple(10, 'enemies');
+  Enemies.createMultiple(10, 'enemies'); 
   Enemies.setAll('anchor.x', 0.5);
   Enemies.setAll('anchor.y', 0.5);
 //  Enemies.setAll('scale.x', 1.5);
@@ -638,7 +638,7 @@ function shipCollide(bullet, enemy) {
    explosion.play('explosion', 30, false, true);   
    
    
-   var text3=game.add.text(enemy.body.x + enemy.body.halfWidth, enemy.body.y, "200", style);
+   var text3=game.add.text(enemy.body.x + enemy.body.halfWidth, enemy.body.y, "10", style);
    game.add.tween(text3).to( { alpha: 0 }, 1000, Phaser.Easing.Linear.None, true);
    
    // Increase score
