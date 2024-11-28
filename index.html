@@ -213,7 +213,7 @@ function create() {
   
   Enemies.forEach(function(enemy){
         addEnemyEmitterTrail(enemy);
-        enemy.damageAmount = 200;
+        enemy.damageAmount = 10;
         //enemy.damageAmount = 1;
         enemy.events.onKilled.add(function(){
             //enemy.trail.kill(); 
