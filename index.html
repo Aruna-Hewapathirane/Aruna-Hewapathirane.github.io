@@ -34,22 +34,6 @@
     }
 }
 
-
-		
-
-		.center-image {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-		height:64px;
-			width:64px;
-        }
-
-
-
-
-
-		
 code {
     font-family: 'Fira Code', monospace;
 }
@@ -72,8 +56,20 @@ code {
                 padding: 10px 0;
             }
             
-            .navbar{transition: box-shadow 0.4s ease-in-out;transition: filter 1s ease-in-out;}
-            .navbar:hover{box-shadow:2px 2px 5px rgba(0, 0, 0, 0.3);filter: hue-rotate(300deg);}
+            .navbar{transition:box-shadow 1s ease-in-out;}
+            .navbar:hover{box-shadow:2px 2px 5px rgba(0, 0, 0, 0.3);}
+            
+            
+            .cheetah {
+            width: 54px;
+            height: 54px;
+            animation: hueShift 15s infinite linear;
+        }
+
+        @keyframes hueShift {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
 
             
         </style>
@@ -86,10 +82,10 @@ code {
     <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container px-5">
-		<!--<img src="cheetah.png" style="width:54px;height:54px;">&nbsp;&nbsp;-->	
-        <!--<img src="cheetah.png" style="width:54px;height:54px;" class="hover-image">-->
-        <img src="cheetahpink.png" style="width:54px;height:54px;">
+        <div class="container px-5">
+
+			<img src="cheetahpink.png" style="width:54px;height:54px;" class="cheetah">
+			<!--<img src="cheetah.png"     style="width:54px;height:54px;">-->
     
 
                 <a class="navbar-brand" style="font-size: 14px;" href="#!">"The Programmer’s Toolbox: Lazarus, Free Pascal, Linux, VIM and More!"</a>
