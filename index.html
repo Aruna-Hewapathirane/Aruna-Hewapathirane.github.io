@@ -20,8 +20,22 @@
             body {
               /*  font-family: 'Noto Sans Mono', monospace;*/
     		font-family: 'Fira Code', monospace;
-		  
+		animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation */
 }
+
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        opacity: 1; /* End fully visible */
+    }
+}
+
+
+		
 
 		.center-image {
             display: block;
