@@ -65,11 +65,13 @@
             .navbar:hover{box-shadow:1px 1px 2px 4px rgba(0, 0, 0, 0.7);}
             
             
-            .cheetah {
+            .cheetah {				
 				width: 54px;
 				height: 54px;
-				animation: hueShift 15s infinite linear;
+				display: block;                
+				animation: hueShift 10s infinite linear;
 			}
+
 
 			@keyframes hueShift {
 				  0% { filter: hue-rotate(0deg); }
@@ -98,10 +100,11 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
 
-<!--			<img src="cheetahpink.png" style="width:54px;height:54px;" class="cheetah">&nbsp;&nbsp;-->
+
    
 
                 <a class="navbar-brand" style="font-size: 14px;" href="#!">The Programmer’s Toolbox: Lazarus, Free Pascal, Linux, VIM and More!</a>
+                <img src="cheetahpink.png" style="margin-left:auto;" class="cheetah">&nbsp;&nbsp;
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <!--                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
