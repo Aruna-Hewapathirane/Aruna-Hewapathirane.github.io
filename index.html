@@ -62,7 +62,7 @@
             
             /* Navbar Boxshadow on hover */
             .navbar{transition:box-shadow 1s ease-in-out;}
-            .navbar:hover{box-shadow:2px 2px 5px rgba(0, 0, 0, 0.3);}
+            .navbar:hover{box-shadow:1px 1px 2px 4px rgba(100, 50, 50, 0.7);}
             
             
             .cheetah {
@@ -75,6 +75,17 @@
 				  0% { filter: hue-rotate(0deg); }
 				100% { filter: hue-rotate(360deg); }
 			}
+			
+			.card-body{
+				transition:box-shadow 0.6s ease-in-out,background-color 0.5s ease;
+				}
+			
+			.card:hover .card-body{
+				background-color:#FAFFC7; 
+				/*box-shadow:0px 0px 1px 1px rgba(0, 0, 0, 0.7);*/
+				box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.3),
+                        inset -0px -0px 3px rgba(255, 255, 255, 0.6);
+				}
             
         </style>
 
@@ -87,11 +98,10 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
 
-			<img src="cheetahpink.png" style="width:54px;height:54px;" class="cheetah">&nbsp;&nbsp;
-			<!--<img src="cheetah.png"     style="width:54px;height:54px;">-->
-    
+<!--			<img src="cheetahpink.png" style="width:54px;height:54px;" class="cheetah">&nbsp;&nbsp;-->
+   
 
-                <a class="navbar-brand" style="font-size: 14px;" href="#!">"The Programmer’s Toolbox: Lazarus, Free Pascal, Linux, VIM and More!"</a>
+                <a class="navbar-brand" style="font-size: 14px;" href="#!">The Programmer’s Toolbox: Lazarus, Free Pascal, Linux, VIM and More!</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <!--                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -222,8 +232,11 @@
 </div>
 </div>
 	<!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white" style="font-size: 12px;">Copyright &copy; Aruna Hewapathirane 2025</p>	    </div>
+        <footer class="bg-dark"></br>
+            <div class="container px-2 px-lg-5"><p class="m-0 text-center text-white" style="font-size: 12px;">Copyright &copy; Aruna Hewapathirane  2025</p></br>
+            <img src="200.gif" style="width:66px;height:30px;display: block; margin: auto;" >&nbsp;&nbsp;
+            
+                </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
